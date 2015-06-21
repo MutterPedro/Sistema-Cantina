@@ -10,7 +10,6 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.util.extjs.ExtJSJson;
-import br.com.caelum.vraptor.view.HttpResult;
 
 
 @Resource
@@ -57,10 +56,10 @@ public class FornecedorController {
 	}
 	
 	@Path("fornecedor/remove")
-	public void removerContato(Fornecedor fornecedor){
+	public void removerContato(Long id){
 		FornecedorDAO p = new FornecedorDAO();
-		System.out.println("rem------> "+fornecedor.getId());
-		p.removerFornecedor(fornecedor.getId());
+		System.out.println("rem------> "+id);
+		p.removerFornecedor(id);
 		result.nothing();
 	}
 	

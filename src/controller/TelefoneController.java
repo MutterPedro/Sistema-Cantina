@@ -20,14 +20,26 @@ public class TelefoneController {
 	}
 	
 	@Post
-	@Path("telefone/add")
-	public void addTelefone(Telefone telefone){
-		
-		System.out.println("addTel--------------> "+telefone.getPessoa().getId());
+	@Path("telefone/add-cliente")
+	public void addTelefoneCliente(Telefone telefone){		
+		System.out.println("addTel--------------> "+telefone.getCliente().getId());
 		//System.out.println(ID);
 		ClienteDAO p = new ClienteDAO();
-		Pessoa pessoa = p.carrega(telefone.getPessoa().getId());
-		telefone.setPessoa(pessoa);
+		Cliente pessoa = p.carrega(telefone.getCliente().getId());
+		telefone.setCliente(pessoa);
+		dao.inserirTelefone(telefone);
+		result.nothing();
+	}
+	
+	@Post
+	@Path("telefone/add-fornecedor")
+	public void addTelefoneFornecedor(Telefone telefone){
+		
+		System.out.println("addTel--------------> "+telefone.getFornecedor().getId());
+		//System.out.println(ID);
+		FornecedorDAO p = new FornecedorDAO();
+		Fornecedor pessoa = p.carrega(telefone.getFornecedor().getId());
+		telefone.setFornecedor(pessoa);
 		dao.inserirTelefone(telefone);
 		result.nothing();
 	}
@@ -40,13 +52,7 @@ public class TelefoneController {
 		result.use(ExtJSJson.class).from(lista).success(true).serialize();
 	}
 	
-	
-	public Pessoa formulario(Long id){
-		ClienteDAO p = new ClienteDAO();
-		Pessoa pessoa = p.carrega(id);
-		return pessoa;
-	}
-	
+		
 	@Path("telefone/remove")
 	public void removerTelefone(Long id){
 		dao.removerTelefone(id);

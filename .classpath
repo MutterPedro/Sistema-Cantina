@@ -13,16 +13,60 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/hibernate-commons-annotations-4.0.5.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/hibernate-core-4.3.8.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/jandex-1.1.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/javassist-3.18.1-GA.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/jboss-logging-3.1.3.GA.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/jboss-logging-annotations-1.2.0.Beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/MobilePI/Agenda/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/USER/Desktop/jars/mysql-connector-java-5.1.34-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/avro-1.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/commons-compress-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/guava-11.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/guice-multibindings-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/hibernate-commons-annotations-4.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/hibernate-core-4.3.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/iogi-0.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/javassist-3.12.1.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jboss-logging-3.1.4.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/lucene-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/mirror-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/mysql-connector-java-5.1.30-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/objenesis-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/paranamer-2.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/scannotation-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/vraptor-3.5.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/xml-apis-1.3.03.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/vRaptor/Vraptor lib/lib/xstream-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/jbdevstudio-product-eap-universal-7.1.0.GA-v20131208-0703-B592.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/mysql-connector-java-5.1.34-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/hibernate-commons-annotations-4.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/hibernate-core-4.3.8.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/jandex-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/jboss-logging-3.1.3.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/required/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/HTML CSS JSP/taglib/jstl-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ProGolden/Desktop/Treinamento/HTML CSS JSP/taglib/jstl-impl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lfps/workspace/iText-5.0.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

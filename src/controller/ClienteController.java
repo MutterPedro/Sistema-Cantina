@@ -10,7 +10,6 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.util.extjs.ExtJSJson;
-import br.com.caelum.vraptor.view.HttpResult;
 
 
 @Resource
@@ -57,10 +56,10 @@ public class ClienteController {
 	}
 	
 	@Path("cliente/remove")
-	public void removerContato(Cliente cliente){
+	public void removerContato(Long id){
 		ClienteDAO p = new ClienteDAO();
-		System.out.println("rem------> "+cliente.getId());
-		p.removerCliente(cliente.getId());
+		System.out.println("rem------> "+id);
+		p.removerCliente(id);
 		result.nothing();
 	}
 	
@@ -68,7 +67,7 @@ public class ClienteController {
 	@Path("cliente/list")
 	public void listar(String nome){
 		ClienteDAO p = new ClienteDAO();
-		List<Cliente> lista;
+		List<Cliente> lista;		
 		if(nome==null){
 			lista = p.listaTudo();
 		}

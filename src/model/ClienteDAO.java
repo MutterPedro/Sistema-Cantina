@@ -1,5 +1,4 @@
 package model;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -10,7 +9,6 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.criterion.Restrictions;
 
 import br.com.caelum.vraptor.ioc.Component;
-import br.com.caelum.vraptor.ioc.SessionScoped;
 import model.Cliente;
 
 @Component
@@ -95,6 +93,18 @@ public class ClienteDAO{
 		Session session = factory.openSession();
 		Criteria criteria = session.createCriteria(Cliente.class);
 		criteria.add(Restrictions.eq("id", id));
+		Cliente p =(Cliente) criteria.uniqueResult();
+		return p;
+	}
+	
+	public Cliente carregaMat(String matricula){
+		AnnotationConfiguration configuration = new AnnotationConfiguration();
+		configuration.configure();
+		     
+		SessionFactory factory = configuration.buildSessionFactory();
+		Session session = factory.openSession();
+		Criteria criteria = session.createCriteria(Cliente.class);
+		criteria.add(Restrictions.eq("matricula", matricula));
 		Cliente p =(Cliente) criteria.uniqueResult();
 		return p;
 	}

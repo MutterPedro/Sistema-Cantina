@@ -10,7 +10,6 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.util.extjs.ExtJSJson;
-import br.com.caelum.vraptor.view.HttpResult;
 
 
 @Resource
@@ -35,32 +34,33 @@ public class ProdutoController {
 	
 	@Post
 	@Path("produto/update")
-	public void atuContato(Produto Produto){
+	public void atuContato(Produto produto){
 		ProdutoDAO p = new ProdutoDAO();
-		System.out.println("edit------> "+Produto.getNome());
-		p.alterarProduto(Produto);
+		System.out.println("edit------> "+produto.getNome());
+		p.alterarProduto(produto);
 		result.nothing();
 	}
 	
 	@Path("produto/pesquisar")
-	public void pesquisarContato(String nome){
+	public void pesquisarContato(Long id){
 		ProdutoDAO p = new ProdutoDAO();
-		System.out.println("pesquisa------> "+nome);
-		List<Produto> lista = p.pesquisarProduto(nome);
+		System.out.println("pesquisa------> "+id);
+		Produto busca = p.carrega(id);
 		
 		
 		/*System.out.println("Nome: "+lista.get(0).getNome());
 		System.out.println("Idade: "+lista.get(0).getIdade());
 		System.out.println("Sexo: "+lista.get(0).getSexo());
 		System.out.println("Endereco: "+lista.get(0).getEndereco());*/
-		result.use(ExtJSJson.class).from(lista).success(true).serialize();
+		result.use(ExtJSJson.class).from(busca).success(true).serialize();
 	}
 	
+	@Post
 	@Path("produto/remove")
-	public void removerContato(Produto produto){
+	public void removerContato(Long id){
 		ProdutoDAO p = new ProdutoDAO();
-		System.out.println("rem------> "+produto.getId());
-		p.removerProduto(produto.getId());
+		System.out.println("rem------> "+id);
+		p.removerProduto(id);
 		result.nothing();
 	}
 	
@@ -80,7 +80,7 @@ public class ProdutoController {
 	}
 	
 	@Path("produto/estocar")
-	public void inserirEstique(Long id, int qtde){
+	public void inserirEstoque(Long id, int qtde){
 		ProdutoDAO p = new ProdutoDAO();
 		p.adicionarNoEstoque(id, qtde);
 	}

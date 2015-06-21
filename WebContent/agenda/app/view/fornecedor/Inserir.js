@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Inserir',{
+Ext.define('AG.view.fornecedor.Inserir',{
 	extend: 'Ext.window.Window',
-	alias: 'widget.inserirusuario',
+	alias: 'widget.inserirfornecedor',
 
-    title: 'Inserir Usuario',
+    title: 'Inserir Fornecedor',
     layout: 'fit',
   
 	initComponent: function() {
@@ -20,26 +20,26 @@ Ext.define('AG.view.user.Inserir',{
 		    			items: [
 		    			    {
 		    					xtype: 'textfield',
-		    					name: 'pessoa.nome',
+		    					name: 'fornecedor.nome',
 		    					fieldLabel: 'Nome',
 		    					rowspan: 1
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.idade',
-	    						fieldLabel: 'Idade',
+	    						name: 'fornecedor.cnpj',
+	    						fieldLabel: 'CNPJ',
 	    						colspan: 2
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.sexo',
-	    						fieldLabel: 'Sexo',
+	    						name: 'fornecedor.endereco',
+	    						fieldLabel: 'Endere&ccedil;o',
 	    						rowspan: 1
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.endereco',
-	    						fieldLabel: 'Endereço',
+	    						name: 'fornecedor.produtos',
+	    						fieldLabel: 'Produtos',
 	    						colspan: 2
 	    					}
 	    				]

@@ -1,0 +1,18 @@
+
+.x-panel-header-title-default>.x-title-text-default:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #72b2e0;
+}
+.x-panel-body-default {
+  background: rgb(17, 119, 157);
+  border-color: #c1c1c1;
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: helvetica,arial,verdana,sans-serif;
+  border-width: 1px;
+  border-style: solid;
+}

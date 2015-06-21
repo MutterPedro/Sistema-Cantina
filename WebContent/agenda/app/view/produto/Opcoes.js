@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Opcoes',{
+Ext.define('AG.view.produto.Opcoes',{
 	extend: 'Ext.window.Window',
-	alias: 'widget.useropcoes',
+	alias: 'widget.produtoopcoes',
 
-    title: 'Opções',
+    title: 'Op&ccedil;&otilde;es',
     layout: 'fit',
   
 	initComponent: function() {

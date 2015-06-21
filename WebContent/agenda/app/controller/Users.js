@@ -61,9 +61,10 @@ Ext.define('AG.controller.Users', {
     editUser: function(button,record,grid) {
     	var win    = button.up('window');
         var window = Ext.create('AG.view.user.Edit',{
-        	pessoa: win.pessoa
+        	cliente: win.pessoa
         });
               
+        win.close();
         window.show();
     },
 
@@ -91,7 +92,8 @@ Ext.define('AG.controller.Users', {
 
     inserirUsuario: function(grid) {
         var view = Ext.create('AG.view.user.Inserir');
-        view.show();
+        if(Ext.getCmp('tabpanel-main').currentStore=='store-1')
+        	view.show();
     },
 
     addUsuario: function(button) {
@@ -99,10 +101,10 @@ Ext.define('AG.controller.Users', {
             form   = win.down('form'),
             values = form.getValues(),
             pessoa = this.store = Ext.getStore('store-1');
-        
        Ext.Ajax.request({
-            url: 'http://localhost:8080/Agenda/cliente/add',
-            params: values,
+            url: 'http://localhost:8080/Agenda/cliente/add',       
+            method: "POST",			
+            params: form.getValues(),
             scope: this,
             success: function(response){
                 var text = response.responseText;
@@ -122,14 +124,11 @@ Ext.define('AG.controller.Users', {
     remUsuario: function(button){ 
         var win    = button.up('window');
         var pessoa = this.store = Ext.getStore('store-1'),
-        ID = win.pessoa.get('id');
-        //console.log(win.pessoa.get('id'));
+        ID = win.pessoa.get('id');        
         
         Ext.Ajax.request({
             url: 'http://localhost:8080/Agenda/cliente/remove',
-            params:{
-            	'pessoa.id': ID
-            },
+            params:{'id':ID},
             scope: this,
             success: function(response){              
                 pessoa.load();
@@ -165,7 +164,7 @@ Ext.define('AG.controller.Users', {
         telefone = this.store = Ext.getStore('store-2');
     
 	   Ext.Ajax.request({
-	        url: 'http://localhost:8080/Agenda/telefone/add',
+	        url: 'http://localhost:8080/Agenda/telefone/add-cliente',
 	        params: values,
 	        scope: this,
 	        success: function(response){
@@ -191,21 +190,23 @@ Ext.define('AG.controller.Users', {
     },
     
     pesquisarUsuario: function(button,record,grid){
-        var win    = button.up('panel');
-    	var form   = win.down('textfield');
-    	var	value = form.value;
-        
-        pesquisa = this.store = Ext.getStore('store-1');
-        
-        if(!value){
-        	pesquisa.load();
-        }
-        else{
-        	pesquisa.removeAll();
-        	pesquisa.getProxy().setExtraParam('nome',value);
-	        pesquisa.load();
-	        pesquisa.getProxy().setExtraParam('nome',null);
-        }
-        form.setValue(null);
+    	if(Ext.getCmp('tabpanel-main').currentStore=='store-1'){
+	        var win    = button.up('panel');
+	    	var form   = win.down('textfield');
+	    	var	value = form.value;
+	        
+	        pesquisa = this.store = Ext.getStore('store-1');
+	        //console.log(value);
+	        if(!value){
+	        	pesquisa.load();
+	        }
+	        else{
+	        	pesquisa.removeAll();
+	        	pesquisa.getProxy().setExtraParam('nome',value);	        	
+		        pesquisa.load();
+		        pesquisa.getProxy().setExtraParam('nome',null);
+	        }
+	        form.setValue(null);
+    	}
     }
 });

@@ -2,7 +2,7 @@ Ext.define('AG.view.user.Opcoes',{
 	extend: 'Ext.window.Window',
 	alias: 'widget.useropcoes',
 
-    title: 'Opções',
+    title: 'Op&ccedil;&otilde;es',
     layout: 'fit',
   
 	initComponent: function() {

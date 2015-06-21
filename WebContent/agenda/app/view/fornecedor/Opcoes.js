@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Opcoes',{
+Ext.define('AG.view.fornecedor.Opcoes',{
 	extend: 'Ext.window.Window',
-	alias: 'widget.useropcoes',
+	alias: 'widget.fornecedoropcoes',
 
-    title: 'Opções',
+    title: 'Op&ccedil;&otilde;es',
     layout: 'fit',
   
 	initComponent: function() {
@@ -10,11 +10,12 @@ Ext.define('AG.view.user.Opcoes',{
     	this.buttons = [
             {
                 text: 'Remover',
-                action: 'remove'
+                action: 'remove',
+                handler: this.close
             },
             {
             	text: 'Editar',
-            	action: 'edit'
+            	action: 'edit'            	
             },
             {
                 text: 'Cancel',

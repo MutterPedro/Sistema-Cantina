@@ -13,32 +13,32 @@ Ext.define('AG.controller.Fornecedor', {
 
     views: [
        'fornecedor.List',
-	   'user.Edit',
-       'user.Inserir',
-       'user.Remover',
+	   'fornecedor.Edit',
+       'fornecedor.Inserir',
+       'fornecedor.Remover',
        'telefone.List',
-       'user.Opcoes',
-       'telefone.Inserir',
-       'user.Pesquisar'
+       'fornecedor.Opcoes',
+       'fornecedor.Inserir',
+       'fornecedor.Pesquisar'
     ],
 
     init: function() {
         this.control({
-            'panel > userlist': {
+            'panel > fornecedorlist': {
                 itemdblclick: this.listarContatos,
                 itemclick: this.opcoes
             },
-            'useredit button[action=save]': {
-                click: this.updateUser
+            'fornecedoredit button[action=save]': {
+                click: this.updateFornecedor
             },
             'button[action=inserir]':{
-                click: this.inserirUsuario
+                click: this.inserirFornecedor
             },
-            'inserirusuario button[action=save]':{
-                click: this.addUsuario
+            'inserirfornecedor button[action=save]':{
+                click: this.addFornecedor
             },
-            'removerusuario button[action=save]':{
-                click: this.remUsuario
+            'removerfornecedor button[action=save]':{
+                click: this.remFornecedor
             },
             'telefonelist button[action=novo]':{
             	click: this.inserirTelefone
@@ -46,113 +46,111 @@ Ext.define('AG.controller.Fornecedor', {
             'inserirtelefone button[action=save]':{
             	click: this.addTelefone
             },
-            'useropcoes button[action=remove]':{
-            	click: this.remUsuario
+            'fornecedoropcoes button[action=remove]':{
+            	click: this.remFornecedor
             },
-            'useropcoes button[action=edit]':{
-            	click: this.editUser
+            'fornecedoropcoes button[action=edit]':{
+            	click: this.editFornecedor
             },
             'button[action=pesquisar]':{
-            	click: this.pesquisarUsuario
+            	click: this.pesquisarFornecedor
             }
         });
     },
 
-    editUser: function(button,record,grid) {
+    editFornecedor: function(button,record,grid) {
     	var win    = button.up('window');
-        var window = Ext.create('AG.view.user.Edit',{
-        	pessoa: win.pessoa
+        var window = Ext.create('AG.view.fornecedor.Edit',{
+        	fornecedor: win.fornecedor
         });
-              
+        
+        win.close();
         window.show();
     },
 
-    updateUser: function(button,grid) {
+    updateFornecedor: function(button,grid) {
         var win    = button.up('window'),
         	form   = win.down('form'),
         	record = form.getRecord(),
         	values = form.getValues(),
-            pessoa = this.store = Ext.getStore('store-1');
+            fornecedor = this.store = Ext.getStore('store-fornecedor');
         
         
         Ext.Ajax.request({
-             url: 'http://localhost:8080/Agenda/cliente/update',
+             url: 'http://localhost:8080/Agenda/fornecedor/update',
              params: values,
              scope: this,
              success: function(response){
                  var text = response.responseText;
-                 pessoa.load();
+                 fornecedor.load();
              }
          });
         
         win.close();
-        this.getUsersStore().sync();
+        this.getFornecedorStore().sync();
     },
 
-    inserirUsuario: function(grid) {
-        var view = Ext.create('AG.view.user.Inserir');
-        view.show();
+    inserirFornecedor: function(grid) {
+        var view = Ext.create('AG.view.fornecedor.Inserir');
+        if(Ext.getCmp('tabpanel-main').currentStore=='store-fornecedor')
+        	view.show();
     },
 
-    addUsuario: function(button) {
+    addFornecedor: function(button) {
         var win    = button.up('window'),
             form   = win.down('form'),
             values = form.getValues(),
-            pessoa = this.store = Ext.getStore('store-1');
+            fornecedor = this.store = Ext.getStore('store-fornecedor');
         
        Ext.Ajax.request({
-            url: 'http://localhost:8080/Agenda/cliente/add',
+            url: 'http://localhost:8080/Agenda/fornecedor/add',
             params: values,
             scope: this,
             success: function(response){
                 var text = response.responseText;
-                pessoa.load();
+                fornecedor.load();
             }
         });
         
 
         win.close();
-        this.getUsersStore().sync();
+        this.getFornecedorStore().sync();
     },
 
-    removerUsuario: function(grid){
-        var view = Ext.widget('removerusuario');
+    removerFornecedor: function(grid){
+        var view = Ext.widget('removerfornecedor');
     },
 
-    remUsuario: function(button){ 
+    remFornecedor: function(button){ 
         var win    = button.up('window');
-        var pessoa = this.store = Ext.getStore('store-1'),
-        ID = win.pessoa.get('id');
-        //console.log(win.pessoa.get('id'));
+        var fornecedor = this.store = Ext.getStore('store-fornecedor'),
+        ID = win.fornecedor.get('id');        
         
         Ext.Ajax.request({
-            url: 'http://localhost:8080/Agenda/cliente/remove',
-            params:{
-            	'pessoa.id': ID
-            },
+            url: 'http://localhost:8080/Agenda/fornecedor/remove',
+            params:{'id':ID},
             scope: this,
             success: function(response){              
-                pessoa.load();
+                fornecedor.load();
             }
         });  
         win.close();
-        this.getUsersStore().sync();
+        this.getFornecedorStore().sync();
     },
     
     listarContatos: function(grid, record){
         var window = Ext.create('AG.view.telefone.List',{
         	heigth:500,
         	width:500,
-        	pessoa:record
+        	fornecedor:record
         });
         window.show();
     },
     
     inserirTelefone: function(button,grid){
-    	var win    = button.up('window');
-    	//console.log(win.pessoa);
+    	var win    = button.up('window');    	
     	var window = Ext.create('AG.view.telefone.Inserir',{	
-    		pessoa: win.pessoa  
+    		fornecedor: win.fornecedor  
     	});
     	win.close();
     	window.show();
@@ -180,32 +178,34 @@ Ext.define('AG.controller.Fornecedor', {
     },
     
     opcoes: function(grid,record){
-    	var window = Ext.create('AG.view.user.Opcoes',{
+    	var window = Ext.create('AG.view.fornecedor.Opcoes',{
     		height:100,
     		width: 270,
     		resizable: false,
-    		pessoa: record
+    		fornecedor: record
     	});
     	//console.log(record);
     	window.show();
     },
     
-    pesquisarUsuario: function(button,record,grid){
-        var win    = button.up('panel');
-    	var form   = win.down('textfield');
-    	var	value = form.value;
+    pesquisarFornecedor: function(button,record,grid){
+    	if(Ext.getCmp('tabpanel-main').currentStore=='store-fornecedor'){
+    		var win    = button.up('panel');
+        	var form   = win.down('textfield');
+    		var	value = form.value;
         
-        pesquisa = this.store = Ext.getStore('store-1');
-        
-        if(!value){
-        	pesquisa.load();
-        }
-        else{
-        	pesquisa.removeAll();
-        	pesquisa.getProxy().setExtraParam('nome',value);
-	        pesquisa.load();
-	        pesquisa.getProxy().setExtraParam('nome',null);
-        }
-        form.setValue(null);
+        	pesquisa = this.store = Ext.getStore('store-fornecedor');
+        	//console.log(Ext.getCmp('tabpanel-main'));
+        	if(!value){
+        		pesquisa.load();
+        	}
+        	else{
+        		pesquisa.removeAll();
+        		pesquisa.getProxy().setExtraParam('nome',value);
+	        	pesquisa.load();
+	        	pesquisa.getProxy().setExtraParam('nome',null);
+        	}
+        	form.setValue(null);
+    	}
     }
 });

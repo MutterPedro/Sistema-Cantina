@@ -10,12 +10,19 @@ Ext.define('AG.view.user.List' ,{
         });
         this.store.load();
         this.columns = [
-            {header: 'Name',  dataIndex: 'nome',  flex: 1},
+            {header: 'Nome',  dataIndex: 'nome',  flex: 1},
+            {header: 'CPF', dataIndex: 'cpf', flex: 1},
+            {header: 'MatrÃ­cula', dataIndex: 'matricula', flex: 1},
             {header: 'Idade', dataIndex: 'idade', flex: 1},
             {header: 'Sexo', dataIndex: 'sexo', flex: 1},
-            {header: 'Endereço', dataIndex: 'endereco', flex: 1}
-        ];
-
+            {header: 'Endere&ccedil;o', dataIndex: 'endereco', flex: 1},
+            {header: 'Devendo', dataIndex: 'conta', flex: 1, renderer:this.monetario}
+        ];        
+        
         this.callParent(arguments);
+    },
+    monetario: function(n){
+    	real = "R$"+Ext.util.Format.number(n, '0.00');
+    	return real;
     }
 });

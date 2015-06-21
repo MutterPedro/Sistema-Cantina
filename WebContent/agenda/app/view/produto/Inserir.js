@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Inserir',{
+Ext.define('AG.view.produto.Inserir',{
 	extend: 'Ext.window.Window',
-	alias: 'widget.inserirusuario',
+	alias: 'widget.inserirproduto',
 
-    title: 'Inserir Usuario',
+    title: 'Inserir Produto',
     layout: 'fit',
   
 	initComponent: function() {
@@ -20,27 +20,41 @@ Ext.define('AG.view.user.Inserir',{
 		    			items: [
 		    			    {
 		    					xtype: 'textfield',
-		    					name: 'pessoa.nome',
+		    					name: 'produto.nome',
 		    					fieldLabel: 'Nome',
 		    					rowspan: 1
 	    					},
 	    					{
-	    						xtype: 'textfield',
-	    						name: 'pessoa.idade',
-	    						fieldLabel: 'Idade',
-	    						colspan: 2
+	    						xtype: 'datefield',
+	    						format: 'd/m/Y',
+	    						name: 'produto.fabricacao',
+	    						fieldLabel: 'Fabrica&ccedil;&atilde;o',
+	    						colspan: 1
 	    					},
 	    					{
-	    						xtype: 'textfield',
-	    						name: 'pessoa.sexo',
-	    						fieldLabel: 'Sexo',
+	    						xtype: 'datefield',
+	    						format: 'd/m/Y',
+	    						name: 'produto.validade',
+	    						fieldLabel: 'Validade',
 	    						rowspan: 1
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.endereco',
-	    						fieldLabel: 'Endereço',
-	    						colspan: 2
+	    						name: 'produto.precoCusto',
+	    						fieldLabel: 'Pre&ccedil;o Custo',	    						
+	    						colspan: 1
+	    					},
+	    					{
+	    						xtype: 'textfield',
+	    						name: 'produto.precoVenda',
+	    						fieldLabel: 'Pre&ccedil;o Venda',
+	    						colspan: 1
+	    					},
+	    					{
+	    						xtype: 'textfield',
+	    						name: 'produto.qtdeEstoque',
+	    						fieldLabel: 'Quantidade Estoque',
+	    						colspan: 1
 	    					}
 	    				]
 		        	}
@@ -61,8 +75,9 @@ Ext.define('AG.view.user.Inserir',{
                 scope: this,
                 handler: this.close
             }
-        ];
-
+        ];   	
+    	
+    	
     	this.callParent(arguments);
     }
 });

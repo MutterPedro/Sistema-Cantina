@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Edit', {
+Ext.define('AG.view.fornecedor.Edit', {
     extend: 'Ext.window.Window',
-    alias: 'widget.useredit',
+    alias: 'widget.fornecedoredit',
 
-    title: 'Edit User',
+    title: 'Editar fornecedor',
     layout: 'fit',
     autoShow: true,
 
@@ -10,35 +10,37 @@ Ext.define('AG.view.user.Edit', {
         this.items = [
             {
                 xtype: 'form',
+                
+                style: {borderColor:'#ABCDEF', borderStyle:'solid', borderWidth:'3px',padding:'7px'},
                 items: [
                     {
                         xtype: 'textfield',
-                        name : 'pessoa.nome',
+                        name : 'fornecedor.nome',
                         fieldLabel: 'Name',
-                        value: this.pessoa.get('nome')
+                        value: this.fornecedor.get('nome')
                     },
                     {
                         xtype: 'textfield',
-                        name : 'pessoa.idade',
-                        fieldLabel: 'Idade',
-                        value: this.pessoa.get('idade')
+                        name : 'fornecedor.cnpj',
+                        fieldLabel: 'CNPJ',
+                        value: this.fornecedor.get('cnpj')
                     },
                     {
                         xtype: 'textfield',
-                        name : 'pessoa.sexo',
-                        fieldLabel: 'Sexo',
-                        value: this.pessoa.get('sexo')
+                        name : 'fornecedor.produtos',
+                        fieldLabel: 'Produtos',
+                        value: this.fornecedor.get('produtos')
                     },
                     {
                         xtype: 'textfield',
-                        name : 'pessoa.endereco',
+                        name : 'fornecedor.endereco',
                         fieldLabel: 'Endereco',
-                        value: this.pessoa.get('endereco')
+                        value: this.fornecedor.get('endereco')
                     },
                     {
                         xtype: 'textfield',
-                        name : 'pessoa.id',                     
-                        value: this.pessoa.get('id'),
+                        name : 'fornecedor.id',                     
+                        value: this.fornecedor.get('id'),
                         hidden: true
                     }
                 ]

@@ -8,7 +8,10 @@ Ext.application({
     name: 'AG',
 
     controllers: [
-        'Users'
+        'Users',
+        'Fornecedor',
+        'Produto',
+        'Venda'
     ],
 
     launch: function() {

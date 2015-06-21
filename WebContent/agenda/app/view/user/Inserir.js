@@ -2,7 +2,7 @@ Ext.define('AG.view.user.Inserir',{
 	extend: 'Ext.window.Window',
 	alias: 'widget.inserirusuario',
 
-    title: 'Inserir Usuario',
+    title: 'Novo Cliente',
     layout: 'fit',
   
 	initComponent: function() {
@@ -20,27 +20,55 @@ Ext.define('AG.view.user.Inserir',{
 		    			items: [
 		    			    {
 		    					xtype: 'textfield',
-		    					name: 'pessoa.nome',
+		    					name: 'cliente.nome',
 		    					fieldLabel: 'Nome',
 		    					rowspan: 1
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.idade',
-	    						fieldLabel: 'Idade',
-	    						colspan: 2
-	    					},
-	    					{
-	    						xtype: 'textfield',
-	    						name: 'pessoa.sexo',
-	    						fieldLabel: 'Sexo',
+	    						name: 'cliente.cpf',
+	    						fieldLabel: 'CPF',
 	    						rowspan: 1
 	    					},
 	    					{
 	    						xtype: 'textfield',
-	    						name: 'pessoa.endereco',
-	    						fieldLabel: 'Endereço',
+	    						name: 'cliente.matricula',
+	    						fieldLabel: 'Matricula',
+	    						rowspan: 1
+	    					},
+	    					{
+	    						xtype: 'textfield',
+	    						name: 'cliente.idade',
+	    						fieldLabel: 'Idade',
 	    						colspan: 2
+	    					},
+	    					{
+	    						xtype: 'combobox',
+	                            store: Ext.create('Ext.data.Store', {
+	                                fields: ['abbr', 'name'],
+	                                data : [
+	                                    {"abbr":"F", "name":"Feminino"},
+	                                    {"abbr":"M", "name":"Masculino"}                               
+	                                ]
+	                            }),
+	                            displayField: 'name',
+	                            valueField: 'abbr',
+	    						name: 'cliente.sexo',
+	    						fieldLabel: 'Sexo',
+	    						value: 'M',
+	    						rowspan: 2
+	    					},
+	    					{
+	    						xtype: 'textfield',
+	    						name: 'cliente.endereco',
+	    						fieldLabel: 'Endereco',
+	    						colspan: 2
+	    					},
+	    					{
+	    						xtype: 'textfield',
+	    						name: 'cliente.conta',
+	    						hidden: true,
+	    						value: 0
 	    					}
 	    				]
 		        	}

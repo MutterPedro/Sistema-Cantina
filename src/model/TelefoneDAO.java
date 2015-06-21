@@ -70,12 +70,14 @@ public class TelefoneDAO{
 		Session session = factory.openSession();
 		     
 		Criteria criteria = session.createCriteria(Telefone.class);
-		Criteria criteria2 = session.createCriteria(Pessoa.class);
+		Criteria criteria2 = session.createCriteria(Cliente.class);
 		criteria2.add(Restrictions.eq("id",id));
-		Pessoa pessoa = (Pessoa) criteria2.uniqueResult();
+		Cliente pessoa = (Cliente) criteria2.uniqueResult();
+		Fornecedor fornecedor = (Fornecedor) criteria2.uniqueResult();
 		
 		criteria.add(Restrictions.eq("deleted", false));
-		criteria.add(Restrictions.eq("pessoa", pessoa));
+		criteria.add(Restrictions.eq("cliente", pessoa));
+		criteria.add(Restrictions.eq("fornecedor", fornecedor));
 		List<Telefone> lista = (List<Telefone>) criteria.list();
 		
 		return lista;

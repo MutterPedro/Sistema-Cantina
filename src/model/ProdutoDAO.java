@@ -92,6 +92,7 @@ public class ProdutoDAO {
 		Session session = factory.openSession();
 		Criteria criteria = session.createCriteria(Produto.class);
 		criteria.add(Restrictions.eq("id", id));
+		criteria.add(Restrictions.eq("deleted", false));
 		Produto p =(Produto) criteria.uniqueResult();
 		return p;
 	}

@@ -1,16 +1,20 @@
 package model;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.TemporalType;
+import javax.persistence.Temporal;
 
 @Entity
 public class Produto {
 	@Id @GeneratedValue
 	private Long id;
 	private String nome;
+	@Temporal(TemporalType.DATE)
 	private Date fabricacao;
+	@Temporal(TemporalType.DATE)
 	private Date validade;
 	private float precoCusto;
 	private float precoVenda;

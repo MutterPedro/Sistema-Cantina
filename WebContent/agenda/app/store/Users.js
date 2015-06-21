@@ -5,10 +5,10 @@ Ext.define('AG.store.Users', {
     proxy: {
     	type: 'ajax',
     	api: {
-    		read: 'http://localhost:8080/Agenda/pessoa/list',
-    		create: 'http://localhost:8080/Agenda/pessoa/add',
-        	update: 'http://localhost:8080/Agenda/pessoa/update',
-        	destroy: 'http://localhost:8080/Agenda/pessoa/remove'
+    		read: 'http://localhost:8080/Agenda/cliente/list',
+    		create: 'http://localhost:8080/Agenda/cliente/add',
+        	update: 'http://localhost:8080/Agenda/cliente/update',
+        	destroy: 'http://localhost:8080/Agenda/cliente/remove'
     	},
     	reader: {
     		type: 'json',

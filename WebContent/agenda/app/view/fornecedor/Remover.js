@@ -1,8 +1,8 @@
-Ext.define('AG.view.user.Remover',{
+Ext.define('AG.view.fornecedor.Remover',{
 	extend: 'Ext.window.Window',
-	alias: 'widget.removerusuario',
+	alias: 'widget.removerfornecedor',
 
-    title: 'Remover Usuário',
+    title: 'Remover fornecedor',
     layout: 'fit',
     autoShow: true,
 

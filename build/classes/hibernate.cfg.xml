@@ -22,8 +22,11 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     
     <property name="show_sql">true</property>
-    <property name="format_sql">true</property>
-        <mapping class="model.Pessoa" />
+    <property name="format_sql">true</property>    	   
         <mapping class="model.Telefone" />
+        <mapping class="model.Cliente" />
+        <mapping class="model.Fornecedor" />        
+        <mapping class="model.Produto" />
+        <mapping class="model.Venda" />
   </session-factory>
 </hibernate-configuration>

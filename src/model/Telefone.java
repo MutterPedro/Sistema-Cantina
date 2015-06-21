@@ -12,7 +12,9 @@ public class Telefone {
 	private boolean deleted;
 	
 	@ManyToOne
-	private Pessoa pessoa;
+	private Cliente cliente;
+	@ManyToOne
+	private Fornecedor fornecedor;
 
 	public Long getId() {
 		return id;
@@ -62,13 +64,23 @@ public class Telefone {
 		this.deleted = deleted;
 	}
 
-	public Pessoa getPessoa() {
-		return pessoa;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setPessoa(Pessoa pessoa) {
-		this.pessoa = pessoa;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
+
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
+
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+
+
 	
 	
 }
