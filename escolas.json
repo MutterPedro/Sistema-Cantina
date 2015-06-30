@@ -1,0 +1,31 @@
+[
+    {
+      "school_id": 1,
+      "school_type": "Escola",
+      "school_city": "João Pessoa",
+      "school_state": "PB"
+      "school_picture": "http://qga.com.br/wp-content/uploads/2013/09/escola7180.jpg",
+      "school_avaliation" : 9.2,
+      "school_name" : "Escola Municipal Presidente Medici"      
+    },
+
+    {
+      "school_id": 2,
+      "school_type": "Escola",
+      "school_city": "Lavras",
+      "school_state": "MG"
+      "school_picture": "http://www.jornaldelavras.com.br/media/imagens/Noticias/enem_2012_alvaro_botelho_estudantes_foto_jornal_de_lavras.jpg",
+      "school_avaliation" : 8,
+      "school_name" : "Escola Municipal Alvaro Botelho" 
+    },
+
+    {
+      "school_id": 3,
+      "school_type": "Universidade",
+      "school_city": "Lavras",
+      "school_state": "MG"
+      "school_picture": "http://www.lavras24horas.com.br/portal/wp-content/uploads/2011/07/foto02_ufla.gif",
+      "school_avaliation" : 8.5,
+      "school_name" : "Universidade Federal de Lavras" 
+    }
+]
