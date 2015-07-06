@@ -1,0 +1,41 @@
+[
+	{
+	  "user_id": 1,
+	  "user_photo": "http://www.premioideia.com/amigo/images/user1.png",
+	  "user_name": "Pedro Henrique Cabral",
+	  "user_mutual_friends": 305
+	},
+
+	{
+	  "user_id": 2,
+	  "user_photo": "http://www.premioideia.com/amigo/images/user2.png",
+	  "user_name": "Everton Almeida",
+	  "user_mutual_friends": 30
+	},
+	{
+	  "user_id": 3,
+	  "user_photo": "http://www.premioideia.com/amigo/images/user3.png",
+	  "user_name": "Renato Resende",
+	  "user_mutual_friends": 42
+	},
+	{
+	  "user_id": 4,
+	  "user_photo": "http://mlb-s1-p.mlstatic.com/placas-vintage-retro-redondas-decoraco-carro-garagem-14004-MLB4118333464_042013-F.jpg",
+	  "user_name": "Jeep",
+	  "user_mutual_friends": 66
+	},
+	{
+	  "user_id": 5,
+	  "user_photo": "http://mlb-s1-p.mlstatic.com/placas-redondas-vintage-retro-harley-davidson-14577-MLB4117885716_042013-F.jpg",
+	  "user_name": "Harley Davidson",
+	  "user_mutual_friends": 55
+	},
+	{
+	  "user_id": 6,
+	  "user_photo": "http://www.parededecorada.com.br/arquivos_loja/18232/Fotos/thumbs3/produto_Foto1_4168098.jpg",
+	  "user_name": "Jack Daniels",
+	  "user_mutual_friends": 7
+	}
+	
+	
+]
