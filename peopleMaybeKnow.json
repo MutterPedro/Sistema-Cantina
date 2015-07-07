@@ -5,13 +5,6 @@
 	  "user_name": "Coca Cola",
 	  "user_mutual_friends": 35
 	},
-
-	{
-	  "user_id": 22,
-	  "user_photo": "http://mlb-s1-p.mlstatic.com/placas-vintage-retro-redondas-jack-daniels-budweiser-14352-MLB4118388554_042013-F.jpg",
-	  "user_name": "Pepsi",
-	  "user_mutual_friends": 12
-	},
 	{
 	  "user_id": 33,
 	  "user_photo": "http://mlb-s1-p.mlstatic.com/placas-redondas-gasolina-retro-vintage-14038-MLB4506886896_062013-O.jpg",
@@ -23,5 +16,11 @@
 	  "user_photo": "http://mlb-d1-p.mlstatic.com/4797-MLB4928205988_082013-O.jpg",
 	  "user_name": "Esso",
 	  "user_mutual_friends": 10
+	},
+	{
+	  "user_id": 22,
+	  "user_photo": "http://mlb-s1-p.mlstatic.com/placas-vintage-retro-redondas-jack-daniels-budweiser-14352-MLB4118388554_042013-F.jpg",
+	  "user_name": "Pepsi",
+	  "user_mutual_friends": 20
 	}
 ]
