@@ -27,5 +27,25 @@
       "school_picture": "http://www.lavras24horas.com.br/portal/wp-content/uploads/2011/07/foto02_ufla.gif",
       "school_avaliation" : 8.5,
       "school_name" : "Universidade Federal de Lavras" 
+    },
+    
+    {
+      "school_id": 4,
+      "school_type": "Escola",
+      "school_city": "Porto Ferreira",
+      "school_state": "SP",
+      "school_picture": "http://www.coefe.com.br/site/images/stories/estruturacentro/Patio%2001.png",
+      "school_avaliation" : 9.7,
+      "school_name" : "Colégio Cooperativo Ferreirense" 
+    },
+    
+    {
+      "school_id": 5,
+      "school_type": "Escola",
+      "school_city": "São Paulo",
+      "school_state": "SP",
+      "school_picture": "http://noticias.r7.com/blogs/nicolau-marmo/files/2012/07/Escola-T%C3%A9cnica-Federal-de-S%C3%A3o-Paulo.jpg",
+      "school_avaliation" : 9.9,
+      "school_name" : "Escola Técnica Federal de São Paulo" 
     }
 ]
