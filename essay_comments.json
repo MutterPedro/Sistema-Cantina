@@ -1,0 +1,54 @@
+[
+  {
+    "essay_comment_id": 1,
+    "essay_id": 1,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  },
+  {
+    "essay_comment_id": 2,
+    "essay_id": 1,
+    "essay_comment_author": "Guilherme Borges",
+    "essay_text": "Muito boa mesmo..."
+  },
+  {
+    "essay_comment_id": 3,
+    "essay_id": 1,
+    "essay_comment_author": "Guilherme Borges",
+    "essay_text": "Muito boa mesmo..."
+  },
+  {
+    "essay_comment_id": 4,
+    "essay_id": 1,
+    "essay_comment_author": "Guilherme Borges",
+    "essay_text": "Muito boa mesmo..."
+  },
+  {
+    "essay_comment_id": 5,
+    "essay_id": 2,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  },
+  {
+    "essay_comment_id": 6,
+    "essay_id": 2,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  },
+  {
+    "essay_comment_id": 7,
+    "essay_id": 3,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  },{
+    "essay_comment_id": 8,
+    "essay_id": 3,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  },{
+    "essay_comment_id": 9,
+    "essay_id": 3,
+    "essay_comment_author": "Álvaro Nogueira",
+    "essay_text": "Achei muito boa a redação"
+  }
+]
