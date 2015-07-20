@@ -7,7 +7,7 @@
 	  "essay_datetime": "2015-05-15 08:53:00",
 	  "essay_likes": 30,
 	  "essay_comments": 16,
-	  "essay_reads": 26
+	  "essay_views": 26
 	},
 
 	{
@@ -18,7 +18,7 @@
 	  "essay_datetime":"2014-11-04 17:34:00",
 	  "essay_likes": 14,
 	  "essay_comments": 3,
-	  "essay_reads": 18
+	  "essay_views": 18
 	  
 	},
 	{
@@ -29,7 +29,7 @@
 	  "essay_datetime":"2014-11-04 16:55:00",
 	  "essay_likes": 25,
 	  "essay_comments": 14,
-	  "essay_reads": 30
+	  "essay_views": 30
 	}
 	
 ]
