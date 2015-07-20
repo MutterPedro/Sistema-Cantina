@@ -1,0 +1,26 @@
+[
+	{
+	  "essay_id": 1,
+	  "essay_title": "Por um bom viver",
+	  "essay_resume": "O ornamento da vida está na forma como um país trata suas crianças. A frase do sociólogo Gilberto Freyre deixa nítida a relação de cuidado que uma nação deve ter com as questões referentes à infância. Dessa forma, é válido analisar a maneira como o excesso de publicidade infantil pode contribuir negativamente para o desenvolvimento dos pequenos e do Brasil.",
+	  "essay_author": "Dandara Luiza da Costa",
+	  "essay_datetime": "2015-05-15 08:53"
+	},
+
+	{
+	  "essay_id": 2,
+	  "essay_title": "Nota máxima ENEM 2014",
+	  "essay_resume": "A publicidade infantil movimenta bilhões de dólares e é responsável por considerável aumento no número de vendas de produtos e serviços direcionados às crianças. No Brasil, o debate sobre a publicidade infantil representa uma questão que envolve interesses diversos. Nesse contexto, o governo deve regulamentar a veiculação e o conteúdo de campanhas publicitárias voltadas às crianças, pois, do contrário, elas podem ser prejudicadas em sua formação, com prejuízos físicos, psicológicos e emocionais",
+	  "essay_author": "Antônio Ivan Araújo",
+	  "essay_datetime":"2014-11-04 17:34"
+	  
+	},
+	{
+	  "essay_id": 3,
+	  "essay_title": "Criança: futuro consumidor",
+	  "essay_resume": "A propaganda é a principal arma das grandes empresas. Disseminada em todos os meios de comunicação, a ampla visibilidade publicitária atinge seu principal objetivo: expor um produto e explicar sua respectiva função. No entanto, essa mesma função é distorcida por anúncios apelativos, que transformam em sinônimos o prazer e a compra, atingindo principalmente as crianças.",
+	  "essay_author": "Giovana Lazzaretti Segat",
+	  "essay_datetime":"2014-11-04 16:55" 
+	}
+	
+]
