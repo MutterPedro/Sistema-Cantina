@@ -3,52 +3,61 @@
     "essay_comment_id": 1,
     "essay_id": 1,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user1.png"
   },
   {
     "essay_comment_id": 2,
     "essay_id": 1,
     "essay_comment_author": "Guilherme Borges",
-    "essay_text": "Muito boa mesmo..."
+    "essay_text": "Muito boa mesmo...",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user2.png"
   },
   {
     "essay_comment_id": 3,
     "essay_id": 1,
     "essay_comment_author": "Guilherme Borges",
-    "essay_text": "Muito boa mesmo..."
+    "essay_text": "Muito boa mesmo...",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user3.png"
   },
   {
     "essay_comment_id": 4,
     "essay_id": 1,
     "essay_comment_author": "Guilherme Borges",
-    "essay_text": "Muito boa mesmo..."
+    "essay_text": "Muito boa mesmo...",
+    "essay_author_picture": "http://mlb-s1-p.mlstatic.com/placas-vintage-retro-redondas-decoraco-carro-garagem-14004-MLB4118333464_042013-F.jpg"
   },
   {
     "essay_comment_id": 5,
     "essay_id": 2,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture":"http://mlb-s1-p.mlstatic.com/placas-redondas-vintage-retro-harley-davidson-14577-MLB4117885716_042013-F.jpg"
   },
   {
     "essay_comment_id": 6,
     "essay_id": 2,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture":"http://www.parededecorada.com.br/arquivos_loja/18232/Fotos/thumbs3/produto_Foto1_4168098.jpg"
   },
   {
     "essay_comment_id": 7,
     "essay_id": 3,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user1.png"
   },{
     "essay_comment_id": 8,
     "essay_id": 3,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user2.png"
   },{
     "essay_comment_id": 9,
     "essay_id": 3,
     "essay_comment_author": "Álvaro Nogueira",
-    "essay_text": "Achei muito boa a redação"
+    "essay_text": "Achei muito boa a redação",
+    "essay_author_picture": "http://www.premioideia.com/amigo/images/user3.png"
   }
 ]
