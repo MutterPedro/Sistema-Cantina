@@ -1,0 +1,59 @@
+[
+  {
+    "evaluation_school_name": "Creche Roberta Rodrigues tavares",
+    "evaluation_school_type": "Educação Infantil",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 1
+  },{
+    "evaluation_school_name": "Creche Sesc",
+    "evaluation_school_type": "Educação Infantil",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 0
+  },{
+    "evaluation_school_name": "E.E.E.F Pedro Lins Vieira de Melo",
+    "evaluation_school_type": "Ensino Fundamental",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 1,
+    "evaluation_done": 1
+  },{
+    "evaluation_school_name": "Creche Menino Jesus",
+    "evaluation_school_type": "Educação Infantil",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 1
+  },{
+    "evaluation_school_name": "Instituto Federal da Paraíba",
+    "evaluation_school_type": "Ensino Profissional/Tecnológico",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 1
+  },{
+    "evaluation_school_name": "E.E.E.M Dr. João Marcos Pádua,
+    "evaluation_school_type": "Ensino Médio",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 1
+  },{
+    "evaluation_school_name": "Universidade Federal de Lavras",
+    "evaluation_school_type": "Educação Superior",
+    "evaluation_school_city": "João Pessoa",
+    "evaluation_school_state": "PB",
+    "evaluation_date":"2015-02-06 10:50:00",
+    "evaluation_liked": 0,
+    "evaluation_done": 1
+  }
+]
