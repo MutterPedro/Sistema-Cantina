@@ -1,0 +1,23 @@
+[
+  {
+    "notification_id": 1,
+    "notification_type": 1,
+    "notification_user": "Marina Evangelista",
+    "notification_publication": ""
+  },{
+    "notification_id": 2,
+    "notification_type": 3,
+    "notification_user": "Igor Horta",
+    "notification_publication": "Aula sobre escola limpa com a professora Cláudia"
+  },{
+    "notification_id": 3,
+    "notification_type": 4,
+    "notification_user": "Renato Oliveira",
+    "notification_publication": "Aula sobre escola limpa com a professora Cláudia"
+  },{
+    "notification_id": 1,
+    "notification_type": 2,
+    "notification_user": "",
+    "notification_publication": "E.E.E.F Pedro Lins Vieira de Melo"
+  }
+]
